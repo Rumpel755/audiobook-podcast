@@ -50,6 +50,7 @@ services:
       - /mnt/user/data/media/audiobooks:/media:ro
       - /mnt/user/appdata/audiobook-podcast/global_cover.jpg:/cover/global_cover.jpg:ro
 
+```
 --- 
 
 ## Feed URL
