@@ -1,0 +1,15 @@
+services:
+  audiobook_podcast:
+    image: rumpel755/audiobook-podcast:latest
+    container_name: audiobook-podcast
+    restart: unless-stopped
+
+    environment:
+      MEDIA_ROOT: /media
+      GLOBAL_COVER_PATH: /cover/global_cover.jpg
+      BASE_URL: ""
+      PORT: "8095"
+
+    volumes:
+      - /mnt/user/data/media/audiobooks:/media:ro
+      - /mnt/user/appdata/audiobook-podcast/global_cover.jpg:/cover/global_cover.jpg:ro
