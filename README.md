@@ -34,7 +34,7 @@ Available on Docker Hub:docker pull rumpel755/audiobook-podcast
 ---
 
 ## Example docker-compose.yml
-
+```yaml
 services:
   audiobook_podcast:
     image: rumpel755/audiobook-podcast:latest
